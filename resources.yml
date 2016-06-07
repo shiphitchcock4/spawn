@@ -1,15 +1,15 @@
 resources:
-  - name: nginx
+  - name: image1
     type: image
-    integration: aye-docker #your account integration
+    integration: ship4-docker #your account integration
     source:
-      name: "library/nginx"
+      name: "shiphitchcock4/hitchcock4_sample_node"
       isPull: false
       tag: latest
 
-  - name: busybox
+  - name: image2
     type: image
-    integration: aye-docker #your account integration
+    integration: ship4-docker #your account integration
     source:
       name: "library/busybox"
       isPull: true
@@ -19,5 +19,5 @@ resources:
     type: gitRepo
     integration: github
     source:
-      name: "pranaypareek/sample_python" #you should've access to this project (even if it's public)
+      name: "shiphitchcock4/sampleNod" #you should've access to this project (even if it's public)
       branch: master
