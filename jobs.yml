@@ -2,10 +2,10 @@ jobs:
   - name: job1
     type: manifest
     steps:
-      - GET busybox
+      - GET new
 
   - name: job2
     type: manifest
     steps:
-      - GET nginx
-      - PUT busybox
+      - GET new2
+      - PUT new
